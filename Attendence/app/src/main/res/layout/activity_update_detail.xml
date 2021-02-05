@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDetail">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#42a5f5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="EDIT"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+      android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/profileee"
+            android:text="Zeeshan Haider"
+            android:textSize="35sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/et_fullNmae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Full Name" />
+
+
+                <ImageView
+
+                    android:id="@+id/imageViewp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/et_fullNmae"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/full_name"
+                    android:backgroundTint="@color/black">
+                </ImageView>
+
+                <EditText
+                    android:id="@+id/ett_namE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/imageViewp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="41dp"
+                    android:background="@android:color/transparent"
+                    android:text="jcjbsdkbas"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/black">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/et_fullNmaee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Email" />
+
+
+                <ImageView
+                    android:id="@+id/imageViewe"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/et_fullNmaee"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/email"
+                    android:backgroundTint="@color/black"></ImageView>
+
+                <EditText
+                    android:id="@+id/ett_emaiL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="41dp"
+                    android:background="@android:color/transparent"
+                    android:text="fhdfhsdhfsdh"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/black">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/et_fullNmaeee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="Phone-Number" />
+
+
+                <ImageView
+                    android:id="@+id/imageViewee"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/et_fullNmaeee"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/phone"
+                    android:backgroundTint="@color/black"></ImageView>
+
+                <EditText
+                    android:id="@+id/ett_contacT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="41dp"
+                    android:background="@android:color/transparent"
+                    android:text="8475893745"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/black">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/et_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Designation" />
+
+
+                <ImageView
+
+                    android:id="@+id/imageViewD"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/et_designation"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/designation" />
+
+                <EditText
+                    android:id="@+id/ett_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/imageViewD"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="41dp"
+                    android:background="@android:color/transparent"
+                    android:text="jcjbsdkbas"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/black">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/et_currentAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Current Address" />
+
+
+                <ImageView
+
+                    android:id="@+id/imageViewC"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/et_currentAddress"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/permanenthome"></ImageView>
+
+                <EditText
+                    android:id="@+id/ett_Current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/imageViewC"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="41dp"
+                    android:background="@android:color/transparent"
+                    android:text="jcjbsdkbas"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/black">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/et_permenentAddre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Permission Address" />
+
+
+                <ImageView
+
+                    android:id="@+id/imageViewP"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/et_permenentAddre"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/permanenthome"></ImageView>
+
+                <EditText
+                    android:id="@+id/ett_Perminent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/imageViewP"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="41dp"
+                    android:background="@android:color/transparent"
+                    android:text="jcjbsdkbas"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/black">
+
+            </EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttun_update"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/update"
+                android:onClick="updatedata"
+                android:text="SAVE"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

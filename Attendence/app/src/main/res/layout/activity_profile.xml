@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#42a5f5">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PROFILE"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/user_profile"
+            android:text="Zeeshan Haider"
+            android:textSize="35sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="55dp"
+                android:id="@+id/et_fullNmae"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/imageViewp"
+                android:layout_below="@+id/et_fullNmae"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/full_name"
+                android:backgroundTint="@color/black"
+                android:layout_width="26dp"
+                android:layout_height="26dp">
+            </ImageView>
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:id="@+id/ett_namEE"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="41dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imageViewp"
+                android:layout_marginStart="55dp"
+                android:text="Zeeshan Haider" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </EditText>
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="55dp"
+                android:id="@+id/et_fullNmaee"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+
+
+
+            <ImageView
+                android:id="@+id/imageViewe"
+                android:layout_below="@+id/et_fullNmaee"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/email"
+                android:backgroundTint="@color/black"
+                android:layout_width="26dp"
+                android:layout_height="26dp">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ett_emaiLL"
+                android:textSize="20sp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:layout_marginTop="41dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:text="zeeshan11@gmail.com" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </EditText>
+
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="55dp"
+                android:id="@+id/et_fullNmaeee"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone-Number"/>
+
+
+
+            <ImageView
+                android:id="@+id/imageViewee"
+                android:layout_below="@+id/et_fullNmaeee"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/phone"
+                android:backgroundTint="@color/black"
+                android:layout_width="26dp"
+                android:layout_height="26dp">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ett_contacTT"
+                android:textSize="20sp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:layout_marginTop="41dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:text="03023456321" />
+
+
+        </RelativeLayout>
+        <EditText
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </EditText>
+
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="55dp"
+                android:id="@+id/et_designation"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/imageViewD"
+                android:layout_below="@+id/et_designation"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/designation"
+                android:layout_width="26dp"
+                android:layout_height="26dp">
+            </ImageView>
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:id="@+id/ett_designationn"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="41dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imageViewD"
+                android:layout_marginStart="55dp"
+                android:text="Hr" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </EditText>
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="55dp"
+                android:id="@+id/et_currentAddress"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Address"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/imageViewC"
+                android:layout_below="@+id/et_currentAddress"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/home"
+                android:backgroundTint="@color/black"
+                android:layout_width="26dp"
+                android:layout_height="26dp">
+            </ImageView>
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:id="@+id/ett_Currentt"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="41dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imageViewC"
+                android:layout_marginStart="55dp"
+                android:text="jinnah garden" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </EditText>
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="55dp"
+                android:id="@+id/et_permenentAddre"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permmanent Address"/>
+
+
+            <ImageView
+
+                android:id="@+id/imageViewP"
+                android:layout_below="@+id/et_permenentAddre"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/permanenthome"
+                android:layout_width="26dp"
+                android:layout_height="26dp">
+            </ImageView>
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:id="@+id/ett_Perminentt"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="41dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imageViewP"
+                android:layout_marginStart="55dp"
+                android:text="SadiqAbad" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </EditText>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttun_update"
+        android:layout_width="161dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="moveToUpdate"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content"
+        android:background="@drawable/update"
+        android:text="UPDATE" />
+
+
+    </LinearLayout>
+</ScrollView>

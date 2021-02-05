@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    />
+    <!--The above colour is completely transparent!-->
+
+<stroke android:width=".5dp"
+    android:color="@color/black">
+</stroke>
+
+    <corners android:radius="5dp">
+    </corners>
+<!--    <gradient-->
+<!--        android:endColor="#546e7a"-->
+<!--        android:angle="180" />-->
+</shape>

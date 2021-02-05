@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarkAttendance">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#42a5f5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ATTENDANCE"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/white">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+
+        android:layout_below="@id/appbar_layout"
+        android:id="@+id/user"
+        android:textColor= "@color/black"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Zeeshan Haider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+<TextView
+    android:id="@+id/tv_timeee"
+    android:layout_below="@+id/user"
+    android:layout_marginBottom="10dp"
+    android:textColor="#FF0404"
+    android:textSize="22sp"
+    android:gravity="center"
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center_horizontal"
+    android:text="Tue 22/2020, 10:28 AM"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</TextView>
+
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/tv_timeee"
+        android:id="@+id/tv_checkIn"
+        android:layout_marginBottom="10dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="CHECK-IN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:id="@+id/tv_checkOut"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv_checkIn"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="CHECK-OUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <CheckBox
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@+id/tv_checkIn"
+            android:id="@+id/checkbox1"
+           android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+
+
+        <CheckBox
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@+id/tv_checkOut"
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+
+</RelativeLayout>
